@@ -1,0 +1,44 @@
+﻿<Window x:Class="JetInv.Controller.C_Ausgangsrechnung"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:JetInv.Controller"
+        mc:Ignorable="d"
+        Title="Beispiel_Window" Height="330" Width="480">
+    <Grid>
+        <Button x:Name="Back" Content="Z" HorizontalAlignment="Left" Margin="5,5,0,0" VerticalAlignment="Top" Width="30" FontFamily="Wingdings 3" Height="30" RenderTransformOrigin="4.737,3.637" FontSize="18" Click="Back_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFB8F55F" Offset="0"/>
+                    <GradientStop Color="#FFD0E407" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Cancel" Content="V" HorizontalAlignment="Left" Margin="40,5,0,0" VerticalAlignment="Top" Width="30" FontFamily="Wingdings 2" Height="30" RenderTransformOrigin="4.737,3.637" FontSize="18" Click="Cancel_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFE66C60" Offset="0"/>
+                    <GradientStop Color="#FFE45707" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Label Content="JetInv" HorizontalAlignment="Left" Margin="391,1,0,0" VerticalAlignment="Top" FontSize="22" Height="34" Width="71" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
+        <GridSplitter Height="1" Margin="45.5,48,43.5,0" VerticalAlignment="Top" Width="383" Background="#FF726868" Foreground="{x:Null}" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center">
+            <GridSplitter.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </GridSplitter.RenderTransform>
+        </GridSplitter>
+        <Button x:Name="Angebot" Content="Angebot" HorizontalAlignment="Left" Margin="10,62,0,0" VerticalAlignment="Top" Width="200" Height="50" Click="Click" FontSize="16" FontFamily="Tahoma"/>
+        <Button x:Name="Ausgangsrechnung" Content="Ausgangsrechnung" HorizontalAlignment="Left" Margin="10,117,0,0" VerticalAlignment="Top" Width="200" Height="50" Click="Click" FontSize="16" FontFamily="Tahoma"/>
+        <Button x:Name="Lieferschein" Content="Lieferschein" HorizontalAlignment="Left" Margin="10,172,0,0" VerticalAlignment="Top" Width="200" Height="50" Click="Click" FontSize="16" FontFamily="Tahoma"/>
+        <Button x:Name="Mietvertrag" Content="Mietvertrag" HorizontalAlignment="Left" Margin="10,227,0,0" VerticalAlignment="Top" Width="200" Height="50" Click="Click" FontSize="16" FontFamily="Tahoma"/>
+        <Label Content="Vertrieb" HorizontalAlignment="Center" Margin="110,17,108,0" VerticalAlignment="Top" Width="254" HorizontalContentAlignment="Center" FontWeight="Bold" FontSize="14"/>
+
+    </Grid>
+</Window>
