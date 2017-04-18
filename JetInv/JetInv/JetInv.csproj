@@ -110,6 +110,7 @@
     <Compile Include="Controller\Vertrieb\MainVertrieb.xaml.cs">
       <DependentUpon>MainVertrieb.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model\Query.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -135,8 +136,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Model\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
